@@ -1,10 +1,11 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet } from 'react-native'
 import { Appbar } from 'react-native-paper'
 import { useSelector } from 'react-redux'
+import App from '../App'
 
 const ApplicationHeader = () => {
-  const { appTitle } = () => {state => state}
+  const { appTitle } = useSelector(state => state)
   return (
     <Appbar.Header>
       <Appbar.Content title={appTitle} />
