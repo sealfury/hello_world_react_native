@@ -25,5 +25,18 @@
     "expo-detox-hook": "^1.0.10",
     "jest-expo": "^40.0.1"
   },
-  "private": true
+  "private": true,
+  "detox": {
+    "testRunner": "jest",
+    "runnerConfig": "e2e/config.json",
+    "configurations": {
+      "ios": {
+        "type": "ios.simulator",
+        "binaryPath": "bin/Exponent.app",
+        "device": {
+          "type": "iPhone 11"
+        }
+      }
+    }
+  }
 }
