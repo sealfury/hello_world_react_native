@@ -2,7 +2,6 @@ import React from 'react'
 import { StyleSheet } from 'react-native'
 import { Appbar } from 'react-native-paper'
 import { useSelector } from 'react-redux'
-import App from '../App'
 
 const ApplicationHeader = () => {
   const { appTitle } = useSelector(state => state)
